@@ -1,0 +1,43 @@
+p{
+    margin: 0;
+}
+
+div{
+    color: red; 
+    height: 50px;
+    width: 150px;
+    border: 1px solid #7863d8;
+    /* background-color: blanchedalmond; */
+}
+
+.main{
+    /* background-color: yellow; */
+}
+
+#mydiv{
+    /* background-color: #7863d8; */
+}
+
+.second{
+    /* background-color: rgb(229, 243, 243); */
+}
+
+.cass .texta{
+    color: rgb(42, 151, 60);
+}
+
+.cass .textb{
+    color: rgb(151, 42, 142);
+}
+
+.main div:last-child{ 
+    /* background-color: rgb(238, 130, 157); */
+} 
+
+.main div:nth-child(even){
+    background-color: violet;
+}
+
+.main div[name="user"]{
+    background-color: brown;
+}
