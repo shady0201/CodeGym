@@ -1,26 +1,26 @@
-var maindiv = document.querySelector('.main div[name="user"]');
+// var maindiv = document.querySelector('.main div[name="user"]');
 
-maindiv.remove();
+// maindiv.remove();
 
-var myName = 'Cass';
+// var myName = 'Cass';
 
-var nameClone = myName;
-nameClone = 'Shady';
+// var nameClone = myName;
+// nameClone = 'Shady';
 
-console.log(myName);
-console.log(nameClone);
+// console.log(myName);
+// console.log(nameClone);
 
-var user = {
-    name: 'Cass',
-    age: 26
-}
+// var user = {
+//     name: 'Cass',
+//     age: 26
+// }
 
-console.log(user);
+// console.log(user);
 
-var userClone = user;
+// var userClone = user;
 
-userClone.age = 10;
+// userClone.age = 10;
 
-console.log(user);
+// console.log(user);
 
 

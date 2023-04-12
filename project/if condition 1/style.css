@@ -1,0 +1,28 @@
+.bt{
+   padding: 50px; 
+   border: 1px solid;
+   margin-bottom: 50px;
+   background-color: rgb(244, 233, 218);
+} 
+
+p{
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.backicon{
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.backbutton{
+   color: blue; 
+   text-decoration: none;  
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
