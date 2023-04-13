@@ -12,6 +12,13 @@ let objectList = [
         url : 'project/if condition 1/index.html',
         icon : 'fa-brands fa-usb icon-wrap'
     },
+
+    {
+        title : 'For, While',
+        desc : 'Cấu trúc For - While',
+        url : '/project/for-while 1/index.html',
+        icon : 'fa-solid fa-rotate icon-wrap'
+    },
 ]
 
 function renderList(){

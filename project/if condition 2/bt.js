@@ -219,6 +219,11 @@ function bt11(){
 }
 
 function bt12(){
+    var soTienGoc = +prompt('Nhập số tiền gốc');
+    var laiSuatHangNam = +prompt('Nhập lãi suất hằng năm');
+    var soThang = 12;
+    var soNam = +prompt('Nhập số năm')
+
     function tinhLaiKep(soTienGoc, laiSuatHangNam, soThang, soNam){
 
        if (soTienGoc > 0 && laiSuatHangNam > 0 && soThang > 0 && soThang > 0){
@@ -232,10 +237,7 @@ function bt12(){
         return `Lãi suất không hợp lệ`;
        }
     }       
-      var soTienGoc = +prompt('Nhập số tiền gốc');
-      var laiSuatHangNam = +prompt('Nhập lãi suất hằng năm');
-      var soThang = 12;
-      var soNam = +prompt('Nhập số năm')
+    
       return (tinhLaiKep(soTienGoc, laiSuatHangNam, soThang, soNam));    
 }
 
@@ -258,4 +260,21 @@ function bt13(){
         result = 'Bạn thiếu cân'
     }
     document.getElementById("ketqua").innerHTML = "Chỉ số BMI của bạn là: " + formatbmi + ". " + result;
+}
+
+function btSwitch(){
+    let number = +prompt('Nhập số"');
+
+    switch (Math.sign(number)) {
+    case -1:
+        result = ("Số " + number + " là số âm");
+        break;   
+    case 0:
+        result = ("Số " + number + " là số không");
+        break;
+    case 1:
+        result = ("Số " + number + " là số dương");
+        break;
+    }
+    document.getElementById("ketquaSwitch").innerHTML = result;
 }

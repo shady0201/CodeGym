@@ -1,5 +1,5 @@
 .bt{
-    padding: 50px; 
+    padding: 20px; 
     border: 1px solid;
     margin-bottom: 50px; 
     background-color: rgb(244, 233, 218);
@@ -37,9 +37,26 @@ body{
 }
 
 .result{
-    margin: 5px;
+    margin-top: 10px;
 }
     
 .chiso{
    font-size: 17px;
 }
+
+.head-wrap{
+    display: flex;
+    margin: 10px;
+    max-width: 1515px;
+    text-align: left;
+    background-color: #282781;
+    text-decoration: none;
+}
+
+.bt{
+    padding: 20px; 
+    border: 1px solid;
+    margin-bottom: 40px;
+    background-color: rgb(244, 233, 218);
+    margin: 10px;  
+ }
