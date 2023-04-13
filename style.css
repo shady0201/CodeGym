@@ -4,8 +4,7 @@ body{
 
 .head-wrap{
    display: flex;
-   margin: 10px;
-   max-width: 1550px;
+   margin: 10px 10px 10px 20px;
    text-align: left;
    background-color: #282781;
    text-decoration: none;
@@ -17,7 +16,7 @@ body{
    display: flex;
    align-items: center;
    justify-content: center;
-   background-color: yellow;
+   background-color: #e9ec23c4;
 }
 
 .card-wrap{
@@ -27,19 +26,35 @@ body{
 
 .card{
    width: 17rem;
-   margin: 10px;
+   margin: 10px 0px 0px 20px;
    overflow: hidden;
+}
+
+.card:hover{
+   box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.42);
 }
 
 .img-wrap i{
    font-size: 150px;
-   color: black;
+   color: rgb(59, 59, 59);
 }
 
 .card-text{
    height: 48px;
    text-overflow: ellipsis;
    overflow: hidden;
+   width: auto;
+   display: -webkit-box;
+   display: -moz-box;
+   display: box;
+   -webkit-box-orient: vertical;
+   -moz-box-orient: vertical;
+   box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   -webkit-line-clamp: 2;
+   -moz-line-clamp: 2;
+   line-clamp: 2;
 }
 
 .card-title{

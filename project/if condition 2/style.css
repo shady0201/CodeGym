@@ -1,10 +1,20 @@
+.head-wrap{
+    display: flex;
+    margin: 10px;
+    max-width: auto;
+    text-align: left;
+    background-color: #282781;
+    text-decoration: none;
+}
+
 .bt{
     padding: 20px; 
     border: 1px solid;
-    margin-bottom: 50px; 
+    margin-bottom: 40px;
     background-color: rgb(244, 233, 218);
-}
- 
+    margin: 10px;  
+ }
+
 p{
     font-weight: bold;
     margin: 0;
@@ -44,19 +54,3 @@ body{
    font-size: 17px;
 }
 
-.head-wrap{
-    display: flex;
-    margin: 10px;
-    max-width: 1515px;
-    text-align: left;
-    background-color: #282781;
-    text-decoration: none;
-}
-
-.bt{
-    padding: 20px; 
-    border: 1px solid;
-    margin-bottom: 40px;
-    background-color: rgb(244, 233, 218);
-    margin: 10px;  
- }

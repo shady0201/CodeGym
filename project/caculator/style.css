@@ -1,7 +1,7 @@
 .head-wrap{
     display: flex;
     margin: 10px;
-    max-width: 1515px;
+    max-width: auto;
     text-align: left;
     background-color: #282781;
     text-decoration: none;

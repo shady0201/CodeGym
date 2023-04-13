@@ -3,30 +3,36 @@ let projectList = [
         title : 'Caculator',
         desc : 'Mô phỏng ứng dụng Caculator trong máy tính',
         url : '/project/caculator/index.html',
-        icon : 'fa-solid fa-calculator'
+        icon : 'fa-solid fa-calculator',
+        anim : 'ring',
+        id : 1,
     },
     
     {
         title : 'If, Else',
         desc : 'Cấu trúc điều kiện',
         url : 'project/if condition 1/index.html',
-        icon : 'fa-brands fa-usb'
+        icon : 'fa-brands fa-usb',
+        anim : 'beat',
+        id : 2,
     },
 
     {
         title : 'For, While',
         desc : 'Cấu trúc For - While',
         url : '/project/for-while 1/index.html',
-        icon : 'fa-solid fa-rotate'
+        icon : 'fa-solid fa-rotate',
+        anim : 'rotate',
+        id : 3,
     },
 ]
 
 function renderItem(){
     let itemWrap = document.getElementsByClassName("card-wrap")[0];
     for (let i = 0; i < projectList.length; i++) {
-        let { icon, title, desc, url } = projectList[i];
+        let { icon, title, desc, url, anim, id } = projectList[i];
         let cardHtml = 
-            `<div class="card">
+            `<div id="card-${id}" onmouseenter="cardMouseIn(${id}, '${anim}', true)" onmouseleave="cardMouseIn(${id}, '${anim}', false)" class="card">
                 <div class="img-wrap">
                     <i class="${icon}"></i>
                 </div>
@@ -39,6 +45,24 @@ function renderItem(){
         itemWrap.innerHTML += cardHtml;
     }
 }
+
+function cardMouseIn(id, animName, active){
+    let card = document.querySelector('#card-' + id);
+    let icon = card.querySelector('i');
+    icon.classList.toggle(animName, active);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 // for (const item of projectList) {
     //     itemWrap.innerHTML += `

@@ -1,0 +1,59 @@
+.ring{
+    animation-name: ring;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.beat{
+    animation-name: beat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.rotate{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(-20deg);
+    }
+
+    100%{
+        transform: rotate(20deg);
+    }
+}
+
+
+@keyframes beat {
+    0%{
+        scale: 1.0;
+    }
+
+    50%{
+        scale: 0.8;
+    }
+
+    100%{
+        scale: 1.1;
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
