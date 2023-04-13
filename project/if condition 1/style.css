@@ -12,17 +12,32 @@ p{
 }
 
 .backicon{
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
     cursor: pointer;
 }
 
 .backbutton{
-   color: blue; 
-   text-decoration: none;  
+    font-size: 18px;
+    color: blue; 
+    text-decoration: none;  
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+}
+
+.head-button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn{
+    background-color: hsl(166, 100%, 50%);
+    font-size: 15px;
+}
+
+.result{
+    margin: 5px;
 }

@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a class="backbutton" href="../../index.html">
-            <i class="fa-solid fa-reply backicon"></i>
+    <header class = "head-button">
+        <a class="backbutton" href="../if condition 1/index.html">
+            <i class="fa-solid fa-arrow-left backicon"></i>
             Quay về
         </a>
-    </header><br>
+    </header>
     <div class="bt">
         <p>Bài 1: Chuyển từ độ C sang độ F : 
             °C  x  9/5 + 32 = °F"</p>
@@ -26,7 +26,7 @@
     </div>
     <div class="bt">
         <p>Bài 2: Chuyển từ mét sang feet : 
-             ft =m * 3.2808</p>
+             ft = m * 3.2808</p>
         <button onclick="run('bt2')" type="button" class="btn btn-primary">Chạy</button>
         <p class="result" id="bt2"></p>
     </div>
@@ -86,8 +86,8 @@
     </div>
     <div class="bt">
         <p>Bài 13: Tính chỉ số cân nặng của cơ thể</p>
-        <input type="text" placeholder="Nhập số cân nặng (kg)" id="canNang"><br>
-        <input type="text" placeholder="Nhập chiều cao (m)" id="chieuCao"><br><br>
+        <input class="chiso" type="text" placeholder="Nhập số cân nặng (kg)" id="canNang"><br>
+        <input class="chiso" type="text" placeholder="Nhập chiều cao (m)" id="chieuCao"><br><br>
         <button onclick="run('bt13')" type="button" class="btn btn-primary">Chạy</button>
         <p class="result" id="ketqua"></p>
     <script src="bt.js"></script>

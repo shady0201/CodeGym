@@ -73,13 +73,16 @@ function bt5(){
 }
 
 function bt6(){
+    var a = +prompt('Nhập a');
+    var b = +prompt('Nhập b'); 
+
     function giaiPTBac1(a,b){
-            if(a === 0)
+        if(a === 0)
         {
-            if (b === 0)
-        {
-        return 'Phương trình có vô số nghiệm';
-        }
+          if (b === 0)
+            {
+            return 'Phương trình có vô số nghiệm';
+            }
             else 
             {
             return 'Phương tình vô nghiệm';
@@ -90,12 +93,15 @@ function bt6(){
             return 'Nghiệm của phương trình là x = ' + x;
         }
     }
-    var a = +prompt('Nhập a');
-    var b = +prompt('Nhập b'); 
+    
     return (giaiPTBac1(a, b));
 }
 
 function bt7(){
+    var a = +prompt('Nhập a');
+    var b = +prompt('Nhập b'); 
+    var c = +prompt('Nhập c');
+
     function giaiPTBac2(a, b, c) {
         let delta = b * b - 4 * a * c;
       
@@ -110,10 +116,7 @@ function bt7(){
           return `Phương trình có hai nghiệm phân biệt: x1 = ${x1}, x2 = ${x2}`;
         }
       }
-    
-    var a = +prompt('Nhập a');
-    var b = +prompt('Nhập b'); 
-    var c = +prompt('Nhập c');
+
     return (giaiPTBac2(a, b, c));
 }
 
