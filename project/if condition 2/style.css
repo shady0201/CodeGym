@@ -7,6 +7,14 @@
     text-decoration: none;
 }
 
+.head-img{
+    margin-bottom: -5px;
+}
+
+.head-button{
+    margin-bottom: -10px;
+}
+
 .bt{
     padding: 20px; 
     border: 1px solid;
@@ -35,6 +43,8 @@ p{
     font-size: 18px;
     color: blue; 
     text-decoration: none;  
+    padding-left: 10px;
+
 }
 
 body{

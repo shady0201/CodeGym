@@ -12,6 +12,10 @@ body{
     overflow: hidden;
 }
 
+.head-img{
+    margin-bottom: -5px;
+ }
+
 /* .start{
     border: 1px solid #37259b;
     display: flex;
