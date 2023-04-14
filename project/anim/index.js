@@ -8,9 +8,6 @@ const stopAnimation = () => {
 ball.style.animationPlayState = 'paused';
 };
 
-document.getElementById('startBall').addEventListener('click', startAnimation);
-document.getElementById('stopBall').addEventListener('click', stopAnimation);
-
-
-
+// document.getElementById('startBall').addEventListener('click', startAnimation);
+// document.getElementById('stopBall').addEventListener('click', stopAnimation);
 
