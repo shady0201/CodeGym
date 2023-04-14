@@ -1,7 +1,16 @@
-function startAnimation() {
-    var box = document.querySelector('.ball');
-    box.classList.add('animate');
-    setTimeout(function() {
-      box.classList.remove('animate');
-    }, 1000);
-  }
+const ball = document.querySelector('.ball');
+
+const startAnimation = () => {
+ball.style.animationPlayState = 'running';
+};
+
+const stopAnimation = () => {
+ball.style.animationPlayState = 'paused';
+};
+
+document.getElementById('startBall').addEventListener('click', startAnimation);
+document.getElementById('stopBall').addEventListener('click', stopAnimation);
+
+
+
+

@@ -1,12 +1,12 @@
 .ball{
-    margin-top: 100px;
+    margin-top: 150px;
     width: 200px;
     height: 200px;
     border-radius: 200px;
     background-color: darkorchid;
     animation-name: runBall;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation-iteration-count:infinite;
     position: absolute; 
 }
 
@@ -22,12 +22,12 @@
     }
     50%{
         left: calc(100% - 200px);
-        top: calc(100% - 300px);
+        top: calc(100% - 350px);
         background-color: blue;
     }
     75%{
         left: 0;
-        top: calc(100% - 300px);
+        top: calc(100% - 350px);
         background-color: red;
     }
     100%{
@@ -36,7 +36,6 @@
         background-color: yellow;
     }   
 } 
-
 
 .head-wrap{
     display: flex;
@@ -64,6 +63,10 @@
     cursor: pointer;
 }
 
-.animate {
-    animation-play-state: running;
-  }
+.button-Ball{
+    text-align: center;   
+}
+
+.button-Ball button{
+    background-color: wheat;
+}
