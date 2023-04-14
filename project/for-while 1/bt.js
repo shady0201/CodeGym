@@ -37,3 +37,101 @@ function bt3(){
     console.log(fib);
 }
 
+function bt4(){
+    let previousNum = 0;
+    let currentNum = 1;
+
+    for (let fibonacciNum = currentNum; ;fibonacciNum = previousNum + currentNum ) {
+        if (fibonacciNum % 5 === 0) {
+        return 'Đáp án = ' + fibonacciNum;
+    }
+
+    previousNum = currentNum;
+    currentNum = fibonacciNum;
+    }
+       
+}
+
+function bt5(){
+    let previousNum = 0;
+    let currentNum = 1;
+    let sum = 0;
+  
+    for (let i = 0; i < 20; i++) {
+      // tính số tiếp theo trong dãy Fibonacci
+      const next = previousNum + currentNum;
+  
+      // cộng giá trị của số hiện tại vào biến tổng
+      sum = sum + currentNum;
+  
+      // cập nhật previous và current
+      previousNum = currentNum;
+      currentNum = next;
+    }
+  
+    return 'Đáp án = ' + sum;
+}
+
+function bt6(){
+    let sum = 0;
+
+    for (let i = 0; i <= 210; i++) {
+        if (i % 7 === 0 ){
+            sum = sum + i;
+        }
+    }
+    console.log(sum);
+    return `Đáp án = ${sum}`;
+}
+
+function bt7(){
+    let thongBao = 0
+
+    for (let i = 0; i <= 100; i++){
+        if (i % 3 === 0 && i % 5 === 0)
+        {
+           thongBao =+ i;
+           console.log("BuzzFizz");
+        }
+        else if (i % 3 === 0){
+            thongBao =+ i;
+            console.log("Fizz");
+        }
+        else if (i % 5 === 0){
+            thongBao =+ i;
+            console.log("Buzz");
+        }
+        else
+            thongBao =+ i;
+            console.log(i);
+    }   
+    return `Kiểm tra Console nhé!`;
+}
+
+function bt8(){
+    let nhapNumber = +prompt('Bạn muốn đoán trong khoảng nào');
+    let nhapNumberRan = Math.floor(Math.random() * nhapNumber);
+
+    let count = 1;
+
+    while (count < 4) {
+        let nhapNumberGuess = +prompt('Bạn đoán ra số nào')
+        if (nhapNumberGuess === nhapNumberRan){
+            return `Bạn đã đoán đúng`;
+        }
+        else if (nhapNumberGuess < nhapNumberRan){
+            alert(`Số bạn đoán bé hơn`);
+        }
+        else {
+            alert(`Số bạn đoán lớn hơn`);
+        }
+        count++;
+    }
+    
+    return `Bạn đã hết số lần đoán`;
+}   
+        
+
+
+
+

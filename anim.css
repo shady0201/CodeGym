@@ -2,29 +2,36 @@
     animation-name: ring;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
 }
 
 .beat{
     animation-name: beat;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
 }
 
 .rotate{
     animation-name: rotate;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
 }
 
 .bounce{
     animation-name: bounce;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
 }
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
 
 @keyframes ring {
     0%{
@@ -47,11 +54,11 @@
     }
 
     50%{
-        scale: 0.8;
+        scale: 1.2;
     }
 
     100%{
-        scale: 1.1;
+        scale: 1.0;
     }
 }
 
@@ -70,10 +77,24 @@
         transform: translateX(0);
     }
     50%{
-        transform: translateX(-50px);
+        transform: translateX(40px);
     }
     100%{
-        transform: translateX(50px);
+        transform: translateX(-40px);
     }
 }
 
+@keyframes pulse {
+    0% {
+        scale: 1.0; 
+    }
+  
+    50% {
+        scale: 1.2;
+    }
+  
+    100% {
+        scale: 1.0;
+    }
+  }
+  

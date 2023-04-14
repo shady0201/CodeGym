@@ -34,4 +34,5 @@ body{
 
 .button-Ball button{
     background-color: wheat;
+    cursor: pointer;
 }

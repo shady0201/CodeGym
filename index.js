@@ -34,6 +34,16 @@ let projectList = [
         anim : 'bounce',
         id : 4,
     },
+
+    {   
+        title : 'Facebook',
+        desc : 'My Facebook',
+        url : 'https://www.facebook.com/truonghoanganh.810/',
+        icon : 'fa-brands fa-facebook',
+        anim : 'pulse',
+        id : 5,
+    },
+
 ]
 
 function renderItem(){

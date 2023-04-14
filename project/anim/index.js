@@ -1,4 +1,4 @@
-const ball = document.querySelector('.ball');
+let ball = document.querySelector('.ball');
 
 function startAnimation(){
     ball.style.animationPlayState = 'running';
@@ -10,4 +10,3 @@ function stopAnimation(){
 
 // document.getElementById('startBall').addEventListener('click', startAnimation);
 // document.getElementById('stopBall').addEventListener('click', stopAnimation);
-
