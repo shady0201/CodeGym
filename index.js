@@ -25,6 +25,15 @@ let projectList = [
         anim : 'rotate',
         id : 3,
     },
+
+    {
+        title : 'Animation',
+        desc : 'Chỉnh Animation',
+        url : '/project/anim/animBall.html',
+        icon : 'fa-solid fa-people-pulling',
+        anim : 'bounce',
+        id : 4,
+    },
 ]
 
 function renderItem(){
@@ -51,18 +60,6 @@ function cardMouseIn(id, animName, active){
     let icon = card.querySelector('i');
     icon.classList.toggle(animName, active);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 // for (const item of projectList) {
     //     itemWrap.innerHTML += `

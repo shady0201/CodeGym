@@ -19,6 +19,13 @@
     animation-timing-function: linear;
 }
 
+.bounce{
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 @keyframes ring {
     0%{
         transform: rotate(0deg);
@@ -57,3 +64,16 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes bounce {
+    0% {
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(50px);
+    }
+}
+
