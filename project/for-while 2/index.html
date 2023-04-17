@@ -9,6 +9,7 @@
     <link href="/lib/fontawesome/css/brands.min.css" rel="stylesheet">
     <link href="/lib/fontawesome/css/solid.min.css" rel="stylesheet">
     <link href="/lib/fontawesome/css/regular.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,12 +39,29 @@
     </div>
     <div class="bt">
         <p>Bài 3: In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau</p>
+        <div style="display: flex;">
+            <div>
+                <label>Hướng</label> <br>
+                <select id="triangle_direct" style="height: 30px;width: 150px;">
+                    <option value="I">Hướng 1</option>
+                    <option value="II">Hướng 2</option>
+                    <option value="III">Hướng 3</option>
+                    <option value="IV">Hướng 4</option>
+                </select>
+            </div>
+            <div style="display: block; margin-left: 10px;">
+                <label>Kí tự</label> <br>
+                <input style="width: 40px; margin-right: 10px; text-align: center;" maxlength="1" type="text" value="*" id="triangle_mark">
+                <span id="symbol_list"></span>
+            </div>
+        </div>
+        <div style="margin-top: 10px; margin-bottom: 10px;">
+            <label>Kích thước</label> <br>
+            <input style="width: 150px;" type="number" value="5" id="triangle_size">
+        </div>
         <button onclick="run('bt3')" type="button" class="btn btn-primary">Chạy</button>
         <p class="result" id="bt3"></p>
-        <p class="tamGiac1" id="tamGiac1"></p>
-        <p class="tamGiac2" id="tamGiac2"></p>
-        <p class="tamGiac3" id="tamGiac3"></p>
-        <p class="tamGiac4" id="tamGiac4"></p>
+        <p id="tamGiac"></p>
     </div>
     <div class="bt">
         <p>Bài 4: In hình chữ nhật</p>
