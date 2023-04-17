@@ -20,7 +20,7 @@ body{
    display: flex;
    align-items: center;
    justify-content: center;
-   background-color: #e9ec23c4;
+   background-color: #7842ddc4;
 }
 
 .card-wrap{
@@ -39,7 +39,7 @@ body{
 }
 
 .img-wrap i{
-   font-size: 150px;
+   font-size: 78px;
    color: rgb(59, 59, 59);
 }
 
