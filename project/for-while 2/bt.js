@@ -139,7 +139,7 @@ function bt4(){
 }
 
 function renderListSymbol(){
-    let list = ['○','●','☺','☻','♥','♡','♦','♣','♠','★','✮','✪','✤','✿','❆','💀','♚'];
+    let list = ['○','●','☺','☻','♥','♡','♦','♣','♠','★','✮','✪','✤','✿','❆','💀','♚','◢','◤','◢','◤'];
     list.forEach(symbol=>{
         let item = `<span onclick="selectSymbol('${symbol}')" style="border: 1px solid #b9b9b9;border-radius: 4px;padding: 5px 9px;background: #f3f3f3;color: #020202;cursor: pointer;">${symbol}</span>`;
         document.getElementById("symbol_list").innerHTML += item;
