@@ -80,11 +80,12 @@ function bt3(){
     //     }
     //     document.getElementById("tamGiac4").innerHTML += '<br>'
     // }
-
-    return `<p style="font-style: italic">4 tam giác vuông:</p>`;
+    let direct_symbol = document.getElementById("triangle_direct").options[document.getElementById("triangle_direct").selectedIndex].text;
+    return `<p>Cạnh huyền: ${size} Hướng: ${direct_symbol} Kí tự: ${mark}</p>`;
 }
 
 function generate_triangle(direct,size,mark_char){
+     mark_char = `<span>${mark_char}</span>`;
     let space_char = `<span style="opacity:0">${mark_char}</span>`;
     let result = "";
     let draw_space = direct == "III" || direct == "IV";
