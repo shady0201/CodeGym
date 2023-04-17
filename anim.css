@@ -31,7 +31,7 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-  }
+}
 
 @keyframes ring {
     0%{

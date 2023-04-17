@@ -11,6 +11,11 @@ body{
     text-decoration: none;
 }
 
+.head-img{
+    margin-bottom: -5px;
+    height: 55px;
+}
+
 .head-button{
     margin-bottom: -10px;
 }

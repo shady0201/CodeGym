@@ -35,6 +35,7 @@ let projectList = [
         id : 4,
     },
 
+
     {   
         title : 'Facebook',
         desc : 'My Facebook',
@@ -42,6 +43,15 @@ let projectList = [
         icon : 'fa-brands fa-facebook',
         anim : 'pulse',
         id : 5,
+    },
+
+    {   
+        title : 'Multiplication Table',
+        desc : 'Bảng cửu chương',
+        url : '/project/multiplication-table/index.html',
+        icon : 'fa-solid fa-table-cells',
+        anim : 'ring',
+        id : 6,
     },
 
 ]

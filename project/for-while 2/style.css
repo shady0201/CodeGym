@@ -61,4 +61,31 @@ p{
     margin-top: 10px;
 }
 
+.tamGiac1{
+    margin-top: 10px;  
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.tamGiac2{
+    margin-top: 10px;  
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.tamGiac3{
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bolder; 
+    /* transform: rotateY(180deg);
+    margin-right: 98%; */
+}
+
+.tamGiac4{
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    /* transform: rotateY(180deg);
+    margin-right: 98%; */
+}
 

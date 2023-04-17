@@ -8,10 +8,10 @@ function run(tenbt){
 function bt1(){
     for (let i = 1; i <= 100; i++) {
         if (i === 100) {
-           return 'Đã hoàn thành, kiểm tra Console nhé!';
+           return 'Kiểm tra Console nhé!';
         }
         console.log (i);
-      }
+    }
 }
 
 function bt2(){
@@ -33,8 +33,13 @@ function bt3(){
     let fib = [0, 1];
     for (let i = 2; i < n; i++) {
         fib[i] = fib[i - 1] + fib[i - 2];
+        // if (fib[i] >= 200){
+        //     break;
+        // }
+       
     }
     console.log(fib);
+    return 'Kiểm tra Console nhé!';
 }
 
 function bt4(){
@@ -111,10 +116,11 @@ function bt7(){
 function bt8(){
     let nhapNumber = +prompt('Bạn muốn đoán trong khoảng nào');
     let nhapNumberRan = Math.floor(Math.random() * nhapNumber);
+    console.log(nhapNumberRan);
 
-    let count = 1;
+    let i = 1;
 
-    while (count < 4) {
+    while (i < 4) {
         let nhapNumberGuess = +prompt('Bạn đoán ra số nào')
         if (nhapNumberGuess === nhapNumberRan){
             return `Bạn đã đoán đúng`;
@@ -125,9 +131,8 @@ function bt8(){
         else {
             alert(`Số bạn đoán lớn hơn`);
         }
-        count++;
+        i++;
     }
-    
     return `Bạn đã hết số lần đoán`;
 }   
         
